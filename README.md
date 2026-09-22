@@ -107,3 +107,14 @@ The shipped `.pth` files were saved from CUDA tensors, so every checkpoint is lo
 training/inference still moves the models to CUDA automatically when a GPU is available
 (see `common/training.py`). Loading them without `map_location` on a CPU-only machine raises
 `RuntimeError: Attempting to deserialize object on a CUDA device ...`.
+
+## Environment hardware
+
+The reported results were produced on a single NVIDIA GeForce RTX 4060 Laptop GPU (8 GB) with
+CUDA 12.6. All networks were trained in single precision (`float32`) for 30,000 iterations per
+configuration (approximately 8–12 minutes per run on this device); the reference solutions in
+`reference/` are computed in double precision.
+
+## License
+
+Released under the MIT License — see [LICENSE](LICENSE).
