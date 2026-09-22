@@ -1,0 +1,12 @@
+# DLCC reference code — Python dependencies
+# Versions below match the environment used for the paper.
+# If your setup differs, `pip install -r requirements.txt` still resolves the latest compatible builds.
+
+torch>=2.1
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+tqdm>=4.65
+
+# CUDA build (optional, for GPU training) — adjust the cuXXX tag to your driver:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
